@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@theme {
+    --breakpoint-3xl: 120rem;
+    --color-red:#F33332;
+    --color-nice:#d2e7fc;
+    --color-green:#0fa060;
+    --color-card:rgba(42, 41, 40, 0.2);
+    --color-product:#242221;
+    --color-avocado-100: oklch(0.99 0 0);
+    --color-avocado-200: oklch(0.98 0.04 113.22);
+    --color-avocado-300: oklch(0.94 0.11 115.03);
+    --color-avocado-400: oklch(0.92 0.19 114.08);
+    --color-avocado-500: oklch(0.84 0.18 117.33);
+    --color-avocado-600: oklch(0.53 0.12 118.34);
+    --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+    --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+  }
+  html {
+    overflow-x: hidden;
+    width: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--color-black);
+    width: 100%;
+  }
+  html::selection{
+    background-color: var(--color-gold);
+    color: var(--color-black);
+  }
+  nav,button ,card-product,.box-input{
+    box-shadow: -2px 2px 16px 0px rgba(214, 180, 108, 0.25);
+  }
+  .title::after , .title::before {
+    content:"" ;
+    position: absolute;
+    top: 15px;
+    width: 35px;
+    height:3px;
+    background-color: var(--color-gold);
+  }
+  .title::after {
+    left: -45px;
+
+  }
+  .title::before {
+    right: -45px;
+  }
+  .card {
+    box-shadow: 0px 0px 142px 0px rgba(214, 180, 108, 0.25);
+  }
+  input:focus {
+    border: 2px solid var(--color-red);
+    outline: none;
+  }
+a {
+  text-decoration: none;
+}
