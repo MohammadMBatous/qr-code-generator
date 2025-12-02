@@ -2,9 +2,9 @@
 @import "tailwindcss";
 @theme {
     --breakpoint-3xl: 120rem;
-    --color-red:#F33332;
+    --color-red:#4a151e;
     --color-nice:#d2e7fc;
-    --color-green:#0fa060;
+    --color-green:#988561;
     --color-card:rgba(42, 41, 40, 0.2);
     --color-product:#242221;
     --color-avocado-100: oklch(0.99 0 0);
